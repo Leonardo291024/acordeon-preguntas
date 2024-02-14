@@ -1,0 +1,123 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light_pink: hsl(275, 100%, 97%);
+    --Grayish_purple: hsl(292, 16%, 49%);
+    --Dark_purple: hsl(292, 42%, 14%);
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--Light_pink);
+}
+
+main{
+    position: relative;
+}
+
+/*.banner img{
+    width: 100%;
+}*/
+
+.banner{
+    height: 220px;
+    background-image: url('/assets/images/background-pattern-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-faqs{
+    position: absolute;
+  max-width: 310px;
+    top: 92px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--White);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.container-faqs .container-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container-faqs .container-icon h1{
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--Dark_purple);
+}
+
+.container-faqs .container-icon img{
+    margin-right: 10px;
+}
+
+.container-faqs .queEs{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container-faqs .queEs p{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--Grayish_purple);
+    margin-right: 10px 
+}
+
+.container-faqs .description{
+    margin-bottom: 15px;
+}
+
+.container-faqs .description p{
+    font-weight: 600;
+    font-size: 16px;
+    color: gray;
+}
+
+.container-faqs .container-preguntas div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.container-faqs .container-preguntas .pregunta p{
+    color: black;
+    font-weight: 700;
+}
+
+.container-faqs .container-preguntas .pregunta{
+    cursor: pointer;
+}
+
+.container-faqs .container-preguntas .pregunta p:hover{
+    color: purple;
+}
+
+.inactive{
+    display: none;
+}
+
+.respuesta{
+    margin-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+@media (min-width: 700px){
+    .banner{
+        height: 220px;
+        background-image: url('/assets/images/background-pattern-desktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
